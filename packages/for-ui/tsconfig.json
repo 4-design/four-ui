@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "allowJs": false,
+    "allowSyntheticDefaultImports": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "moduleResolution": "bundler",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "jsx": "preserve",
+    "module": "esnext",
+    "target": "es2023",
+    "strict": true,
+    "skipLibCheck": true,
+    "declaration": true,
+    "declarationDir": "dist/types",
+    "types": ["vitest/globals", "@types/testing-library__jest-dom"],
+    "noEmit": true
+  },
+  "include": ["./src", "./types"],
+  "exclude": ["./node_modules", "./dist"]
+}

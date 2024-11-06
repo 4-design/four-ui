@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+@layer base {
+  body {
+    @apply text-shade-dark-default text-r font-sans antialiased;
+  }
+}
