@@ -1,21 +1,6 @@
 {
+  "extends": "./tsconfig.json",
   "compilerOptions": {
-    "typeRoots": [],
-    "sourceMap": true,
-    "allowJs": false,
-    "allowSyntheticDefaultImports": true,
-    "noUnusedParameters": true,
-    "noImplicitReturns": true,
-    "moduleResolution": "node",
-    "esModuleInterop": true,
-    "resolveJsonModule": true,
-    "jsx": "preserve",
-    "module": "esnext",
-    "target": "esnext",
-    "strict": true,
-    "skipLibCheck": true,
-    "declaration": true,
-    "declarationDir": "dist/types",
     "emitDeclarationOnly": true
   },
   "include": ["./src", "./types"],

@@ -1,5 +1,4 @@
 import React from 'react';
-import { createTheme, StyledEngineProvider, ThemeProvider } from '@mui/material/styles';
 import '../styles/forty.css';
 import '../styles/global.css';
 
@@ -24,34 +23,10 @@ export const parameters = {
 
 const rootElement = document.getElementById('root');
 
-const theme = createTheme({
-  components: {
-    MuiModal: {
-      defaultProps: {
-        container: rootElement,
-      },
-    },
-    MuiPopover: {
-      defaultProps: {
-        container: rootElement,
-      },
-    },
-    MuiPopper: {
-      defaultProps: {
-        container: rootElement,
-      },
-    },
-  },
-});
-
 export const decorators = [
   (Story) => (
-    <StyledEngineProvider injectFirst>
-      <ThemeProvider theme={theme}>
-        <div className="p-2">
-          <Story />
-        </div>
-      </ThemeProvider>
-    </StyledEngineProvider>
+    <div className="p-2">
+      <Story />
+    </div>
   ),
 ];

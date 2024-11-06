@@ -1,0 +1,114 @@
+{
+  "name": "@4design/for-ui-legacy",
+  "version": "1.1.11",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/4-design/for-ui.git"
+  },
+  "homepage": "https://github.com/4-design/for-ui",
+  "author": "locona <miyamae@youx.co.jp>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "main": "dist/commonjs/for-ui.js",
+  "module": "dist/esm/for-ui.esm.js",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/for-ui.esm.js",
+      "require": "./dist/commonjs/for-ui.js",
+      "types": "./dist/types/index.d.ts"
+    },
+    "./tailwind.config.base.js": "./tailwind.config.base.js"
+  },
+  "types": "dist/types/index.d.ts",
+  "files": [
+    "dist",
+    "tailwind.config.base.js"
+  ],
+  "scripts": {
+    "build": "run-p build:'*'",
+    "build-storybook": "build-storybook",
+    "build:js": "NODE_ENV=production vite build",
+    "build:types": "tsc -p tsconfig.build.json",
+    "dev": "run-p storybook",
+    "lint": "run-p lint:*",
+    "lint:type-check": "tsc --pretty",
+    "storybook": "start-storybook --no-manager-cache -p 6006 -s public",
+    "test": "run-p test:*",
+    "test:unit": "vitest run"
+  },
+  "peerDependencies": {
+    "@mui/base": ">=5.0.0-alpha.120",
+    "@mui/lab": ">=5.0.0-alpha.73",
+    "@mui/material": ">=5.9.3",
+    "@tanstack/react-table": ">=8.5.22",
+    "@types/react": ">=18.0.0",
+    "react": ">=18.0.0",
+    "react-icons": ">=4.3.0",
+    "tailwindcss": ">=3.0.0"
+  },
+  "dependencies": {
+    "clsx": "2.1.0",
+    "material-ui-popup-state": "5.0.9",
+    "react-dropzone": "14.2.3",
+    "react-number-format": "5.3.4",
+    "react-transition-group": "4.4.5",
+    "tailwind-merge": "1.14.0"
+  },
+  "devDependencies": {
+    "@emotion/react": "11.11.1",
+    "@emotion/styled": "11.11.0",
+    "@hookform/resolvers": "3.2.0",
+    "@mdx-js/react": "1.6.22",
+    "@mui/base": "5.0.0-alpha.126",
+    "@mui/lab": "5.0.0-alpha.127",
+    "@mui/material": "5.12.1",
+    "@mui/types": "7.2.4",
+    "@storybook/addon-actions": "6.5.15",
+    "@storybook/addon-backgrounds": "6.5.15",
+    "@storybook/addon-essentials": "6.5.15",
+    "@storybook/addon-links": "6.5.15",
+    "@storybook/addon-postcss": "2.0.0",
+    "@storybook/addons": "6.5.16",
+    "@storybook/builder-vite": "0.2.6",
+    "@storybook/builder-webpack5": "6.5.14",
+    "@storybook/manager-webpack5": "6.5.14",
+    "@storybook/mdx2-csf": "0.0.3",
+    "@storybook/react": "6.5.15",
+    "@storybook/theming": "6.5.16",
+    "@tanstack/react-table": "8.15.0",
+    "@testing-library/jest-dom": "5.17.0",
+    "@testing-library/react": "14.2.2",
+    "@testing-library/user-event": "14.5.2",
+    "@types/react": "18.2.37",
+    "@types/react-dom": "18.2.15",
+    "@types/testing-library__jest-dom": "5.14.9",
+    "@vitejs/plugin-react": "2.2.0",
+    "autoprefixer": "10.4.19",
+    "babel-loader": "9.1.0",
+    "jsdom": "24.0.0",
+    "npm-run-all2": "6.1.2",
+    "postcss": "8.4.31",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-hook-form": "7.45.4",
+    "react-icons": "4.10.1",
+    "tailwindcss": "3.4.3",
+    "typescript": "5.1.6",
+    "vite": "3.2.5",
+    "vitest": "0.33.0",
+    "webpack": "5.88.2",
+    "yup": "1.2.0"
+  },
+  "overrides": {
+    "@mdx-js/react": {
+      "react": "^18.2.0",
+      "react-dom": "^18.2.0"
+    }
+  },
+  "sideEffects": false,
+  "volta": {
+    "node": "16.20.2"
+  }
+}

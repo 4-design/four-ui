@@ -1,0 +1,155 @@
+/* Tonal Values */
+
+:root {
+  --shade-10: #ffffff;
+  --shade-20: #f7f8f8;
+  --shade-30: #eef0f1;
+  --shade-40: #dde1e3;
+  --shade-50: #b3bcc1;
+  --shade-60: #76858f;
+  --shade-70: #535e65;
+  --shade-80: #373e43;
+  --shade-90: #202427;
+  --shade-100: #0b0d0e;
+
+  --blue-10: #e0f4fd;
+  --blue-20: #afe2f8;
+  --blue-30: #7acff4;
+  --blue-40: #42bcef;
+  --blue-50: #00aeed;
+  --blue-60: #00a0ea;
+  --blue-70: #0092db;
+  --blue-80: #0080c8;
+  --blue-90: #006fb4;
+  --blue-100: #005093;
+
+  --green-10: #e1f4ef;
+  --green-20: #b5e3d6;
+  --green-30: #85d1bd;
+  --green-40: #54bfa3;
+  --green-50: #30b090;
+  --green-60: #12a17e;
+  --green-70: #0f9472;
+  --green-80: #098362;
+  --green-90: #007354;
+  --green-100: #005739;
+
+  --red-10: #fce3ea;
+  --red-20: #f9bacb;
+  --red-30: #f58da9;
+  --red-40: #f05f87;
+  --red-50: #eb3c6e;
+  --red-60: #e61856;
+  --red-70: #d61354;
+  --red-80: #c00f50;
+  --red-90: #ac084d;
+  --red-100: #880047;
+
+  --yellow-10: #fffde5;
+  --yellow-20: #fff9bf;
+  --yellow-30: #fff493;
+  --yellow-40: #fff066;
+  --yellow-50: #ffea00;
+  --yellow-60: #fed600;
+  --yellow-70: #fdeb3d;
+  --yellow-80: #fcc605;
+  --yellow-90: #efbd09;
+  --yellow-100: #c69a00;
+}
+
+/* Token Values */
+
+:root {
+  --shade-text-dark-default: var(--shade-100);
+  --shade-text-dark-disabled: var(--shade-40);
+  --shade-text-medium-default: var(--shade-60);
+  --shade-text-light-default: var(--shade-40);
+  --shade-text-light-disabled: var(--shade-40);
+  --shade-text-white-default: var(--shade-10);
+  --shade-text-white-disabled: var(--shade-40);
+  --shade-background-dark-default: var(--shade-90);
+  --shade-background-dark-hover: var(--shade-100);
+  --shade-background-dark-disabled: var(--shade-20);
+  --shade-background-medium-default: var(--shade-50);
+  --shade-background-medium-disabled: var(--shade-40);
+  --shade-background-light-default: var(--shade-20);
+  --shade-background-light-hover: var(--shade-30);
+  --shade-background-white-default: var(--shade-10);
+  --shade-background-white-hover: var(--shade-20);
+  --shade-background-white-active: var(--shade-20);
+  --shade-background-white-disabled: var(--shade-20);
+  --shade-border-dark-default: var(--shade-90);
+  --shade-border-dark-disabled: var(--shade-40);
+  --shade-border-medium-default: var(--shade-50);
+  --shade-border-medium-disabled: var(--shade-40);
+  --shade-border-light-default: var(--shade-30);
+  --shade-icon-dark-default: var(--shade-90);
+  --shade-icon-dark-disabled: var(--shade-40);
+  --shade-icon-medium-default: var(--shade-50);
+  --shade-icon-medium-active: var(--shade-60);
+  --shade-icon-medium-disabled: var(--shade-40);
+  --shade-icon-white-default: var(--shade-10);
+
+  --primary-text-dark-default: var(--blue-100);
+  --primary-background-dark-default: var(--blue-90);
+  --primary-background-dark-hover: var(--blue-100);
+  --primary-background-dark-disabled: var(--blue-20);
+  --primary-background-light-default: var(--blue-10);
+  --primary-background-light-hover: var(--blue-20);
+  --primary-border-dark-default: var(--blue-90);
+  --primary-border-dark-disabled: var(--blue-40);
+  --primary-border-medium-default: var(--blue-40);
+  --primary-border-medium-active: var(--blue-70);
+  --primary-border-light-default: var(--blue-20);
+  --primary-icon-dark-default: var(--blue-90);
+  --primary-icon-medium-default: var(--blue-30);
+
+  --secondary-text-dark-default: var(--green-100);
+  --secondary-background-dark-default: var(--green-90);
+  --secondary-background-dark-hover: var(--green-100);
+  --secondary-background-light-default: var(--green-10);
+  --secondary-background-light-hover: var(--green-20);
+  --secondary-border-dark-default: var(--green-90);
+  --secondary-border-medium-default: var(--green-40);
+  --secondary-border-light-default: var(--green-20);
+  --secondary-icon-dark-default: var(--green-90);
+  --secondary-icon-medium-default: var(--green-30);
+
+  --positive-text-dark-default: var(--green-100);
+  --positive-background-dark-default: var(--green-90);
+  --positive-background-light-default: var(--green-10);
+  --positive-background-light-hover: var(--green-20);
+  --positive-border-medium-default: var(--green-40);
+  --positive-border-light-default: var(--green-20);
+  --positive-icon-dark-default: var(--green-90);
+  --positive-icon-medium-default: var(--green-30);
+
+  --negative-text-dark-default: var(--red-100);
+  --negative-background-dark-default: var(--red-90);
+  --negative-background-dark-hover: var(--red-100);
+  --negative-background-light-default: var(--red-10);
+  --negative-background-light-hover: var(--red-20);
+  --negative-border-dark-default: var(--red-90);
+  --negative-border-medium-default: var(--red-40);
+  --negative-border-light-default: var(--red-20);
+  --negative-icon-dark-default: var(--red-90);
+  --negative-icon-medium-default: var(--red-30);
+
+  --notice-text-dark-default: var(--yellow-100);
+  --notice-background-dark-default: var(--yellow-90);
+  --notice-background-light-default: var(--yellow-10);
+  --notice-background-light-hover: var(--yellow-20);
+  --notice-border-medium-default: var(--yellow-40);
+  --notice-border-light-default: var(--yellow-20);
+  --notice-icon-dark-default: var(--yellow-90);
+  --notice-icon-medium-default: var(--yellow-30);
+
+  --informative-text-dark-default: var(--blue-100);
+  --informative-background-dark-default: var(--blue-90);
+  --informative-background-light-default: var(--blue-10);
+  --informative-background-light-hover: var(--blue-20);
+  --informative-border-medium-default: var(--blue-40);
+  --informative-border-light-default: var(--blue-20);
+  --informative-icon-dark-default: var(--blue-90);
+  --informative-icon-medium-default: var(--blue-30);
+}

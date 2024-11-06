@@ -3,14 +3,12 @@ import clsx, { ClassValue } from 'clsx';
 import { extendTailwindMerge } from 'tailwind-merge';
 
 const twMerge = extendTailwindMerge({
-  override: {
-    classGroups: {
-      'font-size': [
-        {
-          text: ['xs', 's', 'r', 'xr', 'l', 'xl'],
-        },
-      ],
-    },
+  classGroups: {
+    'font-size': [
+      {
+        text: ['xs', 's', 'r', 'xr', 'l', 'xl'],
+      },
+    ],
   },
 });
 
