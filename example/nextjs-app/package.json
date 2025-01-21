@@ -12,9 +12,9 @@
     "@4design/for-ui": "1.1.11",
     "@emotion/react": "11.11.1",
     "@emotion/styled": "11.11.0",
-    "@mui/base": "5.0.0-alpha.126",
-    "@mui/lab": "5.0.0-alpha.127",
-    "@mui/material": "5.12.1",
+    "@mui/base": "5.0.0-beta.69",
+    "@mui/lab": "5.0.0-alpha.175",
+    "@mui/material": "5.16.14",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "4.10.1"
